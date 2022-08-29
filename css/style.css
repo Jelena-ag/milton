@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100%;
+  background-color: #f0f0f0;
+  line-height: 135%;
+    font-family: Lato, sans-serif;
+    color: #333;
+    font-size: 14px;
+}
+
+.header-wrapper {
+position: fixed;
+height: 100%;
+width: 400px;
+padding: 50px;
+border-right: 1px solid rgb(226, 226, 226);
+background-color: #fff;
+}
+
+.header-wrapper h1 {
+
+  font-size: 36px;
+}
+
+
