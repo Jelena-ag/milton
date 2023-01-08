@@ -1,0 +1,318 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font-s: 1.4rem;
+  --color: #aaa;
+  --color3: #333;
+  --text-tr: uppercase;
+  --margin-bot: 15px;
+}
+
+html {
+  min-height: 100%;
+  background-color: #f0f0f0;
+  line-height: 135%;
+  font-size: 10px;
+  font-family: Lato, sans-serif;
+  color: #333;
+}
+
+div.header-wrapper {
+  padding: 20px;
+  text-align: center;
+  background-color: #fff;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+div.header-wrapper a {
+  text-decoration: none;
+  color: var(--color);
+}
+
+div.header-wrapper .name h1,
+div.header-wrapper p.name-menu,
+div.header-wrapper .menu {
+  margin-bottom: var(--margin-bot);
+}
+
+div.header-wrapper .name h1 {
+  color: var(--color3);
+  font-size: 3.6rem;
+  font-weight: normal;
+  line-height: 100%;
+}
+
+p {
+  font-size: var(--font-s);
+  color: var(--color);
+}
+
+div.header-wrapper p.name-menu {
+  line-height: 145%;
+}
+
+div.header-wrapper .menu {
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: var(--text-tr);
+}
+
+div.header-wrapper .menu a {
+  margin: 0 10px;
+  letter-spacing: 1px;
+}
+
+div.header-wrapper .menu a.black {
+  color: var(--color3);
+}
+
+div.header-wrapper .menu a:hover {
+  color: #2d3e4f;
+}
+
+div.header-wrapper .contact a {
+  margin-right: 15px;
+}
+
+div.header-wrapper .contact a:hover {
+  color: black;
+}
+
+div.header-wrapper .contact a img {
+  display: inline-block;
+  width: 20px;
+  filter: opacity(0.4);
+}
+
+div.header-wrapper .contact img:hover {
+  filter: opacity(1);
+}
+
+div.header-wrapper p.big-letter {
+  display: none;
+}
+
+main {
+  padding: 20px;
+}
+
+section.article {
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 0 0 1px rgb(0 0 0 / 6%);
+}
+
+main .article img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 5px 5px 0 0;
+  object-fit: cover;
+  /* object-position: */
+  background-repeat: no-repeat;
+}
+
+main .article .post {
+  padding: 20px;
+}
+
+main .article .post a {
+  text-decoration: none;
+}
+
+main .article .post a h1 {
+  margin-bottom: 15px;
+  font-size: 2.6rem;
+  line-height: 32px;
+  font-weight: 400;
+  color: var(--color3);
+}
+
+main .article .post p {
+  display: inline;
+  color: var(--color);
+  font-size: var(--font-s);
+  line-height: 22px;
+}
+
+main .article .post a.more {
+  margin-left: 8px;
+  font-size: var(--font-s);
+  color: var(--color);
+  text-decoration: underline;
+}
+
+main .article .post a.more:hover {
+  color: var(--color3);
+}
+
+main .article .post .travel-wrapper {
+  margin-top: 20px;
+}
+
+main .article .post .travel-wrapper .date {
+  display: inline-block;
+  margin-right: 8px;
+  color: var(--color);
+  font-size: 1rem;
+  line-height: 18px;
+  letter-spacing: 1px;
+  text-transform: var(--text-tr);
+}
+
+main .article .post .travel-wrapper .line {
+  display: inline-block;
+  margin-right: 8px;
+  color: var(--color);
+  font-size: 1rem;
+  line-height: 18px;
+  letter-spacing: 1px;
+  text-transform: var(--text-tr);
+}
+
+main .article .post .travel-wrapper a {
+  display: inline-block;
+  margin-right: 8px;
+  color: var(--color);
+  font-size: 1rem;
+  line-height: 18px;
+  letter-spacing: 1px;
+  text-transform: var(--text-tr);
+}
+
+main .article .post .travel-wrapper a:hover {
+  color: var(--color3);
+}
+
+button {
+  margin-left: calc(50% - 60px);
+  padding: 10px 20px;
+  border-radius: 3px;
+  border: none;
+  font-size: 1.6rem;
+  color: white;
+  background-color: #888;
+}
+
+@media (orientation: portrait) and (min-width: 480px) {
+  main {
+    padding: 30px;
+  }
+
+  section.article {
+    margin-bottom: 30px;
+  }
+
+  main .article img {
+    height: 190px;
+  }
+}
+
+@media (orientation: landscape) {
+
+  div.header-wrapper {
+  padding: 30px;
+}
+
+main {
+    padding: 30px;
+  }
+
+ main .article img {
+    height: 190px;
+  }
+
+}
+
+@media (min-width: 768px) {
+  div.header-wrapper {
+    position: fixed;
+    height: 100%;
+    width: 300px;
+    padding: 30px;
+    text-align: left;
+    border-right: 1px solid rgb(226, 226, 226);
+  }
+
+  div.header-wrapper .gray-underline {
+    width: 90px;
+    height: 1px;
+    margin: 25px 0;
+    background-color: #c7c7c7;
+  }
+
+  div.header-wrapper .menu a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  div.header-wrapper .contact {
+    margin-bottom: 12px;
+  }
+
+  div.header-wrapper .contact a {
+    margin-right: 7px;
+  }
+
+  div.header-wrapper p.big-letter {
+    display: inline-block;
+    margin: 0 0 20px 0;
+    font-size: 1rem;
+    line-height: 160%;
+    letter-spacing: 1.2px;
+    text-transform: var(--text-tr);
+  }
+
+  main {
+    margin-left: 300px;
+  }
+
+  main .article .post {
+    padding: 35px;
+  }
+
+  main .article .post a h1 {
+    font-size: 3rem;
+    line-height: 37px;
+  }
+
+  main .article .post p {
+    margin-bottom: 20px;
+  }
+
+  main .article .post .travel-wrapper {
+    margin-top: 16px;
+  }
+  button {
+  margin-left: 0;
+}
+}
+
+@media (min-width: 1024px) {
+
+   div.header-wrapper {
+    max-width: 1024px;
+    width: 400px;
+    padding: 50px;
+  }
+
+main {
+  max-width: 1200px;
+  margin-left: 400px;
+  padding: 50px;
+}
+
+section.article {
+    margin-bottom: 50px;
+  }
+
+main .article img {
+    height: 250px;
+  }
+
+}
