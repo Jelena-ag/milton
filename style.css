@@ -125,7 +125,7 @@ main .article .post a {
   text-decoration: none;
 }
 
-main .article .post a h1 {
+main .article .post a h2 {
   margin-bottom: 15px;
   font-size: 2.6rem;
   line-height: 32px;
@@ -216,14 +216,14 @@ button {
 @media (orientation: landscape) {
 
   div.header-wrapper {
-  padding: 30px;
-}
-
-main {
     padding: 30px;
   }
 
- main .article img {
+  main {
+    padding: 30px;
+  }
+
+  main .article img {
     height: 190px;
   }
 
@@ -276,7 +276,7 @@ main {
     padding: 35px;
   }
 
-  main .article .post a h1 {
+  main .article .post a h2 {
     font-size: 3rem;
     line-height: 37px;
   }
@@ -288,30 +288,31 @@ main {
   main .article .post .travel-wrapper {
     margin-top: 16px;
   }
+
   button {
-  margin-left: 0;
-}
+    margin-left: 0;
+  }
 }
 
 @media (min-width: 1024px) {
 
-   div.header-wrapper {
+  div.header-wrapper {
     max-width: 1024px;
     width: 400px;
     padding: 50px;
   }
 
-main {
-  max-width: 1200px;
-  margin-left: 400px;
-  padding: 50px;
-}
+  main {
+    max-width: 1200px;
+    margin-left: 400px;
+    padding: 50px;
+  }
 
-section.article {
+  section.article {
     margin-bottom: 50px;
   }
 
-main .article img {
+  main .article img {
     height: 250px;
   }
 
